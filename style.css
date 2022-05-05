@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo img {
+  height: 80px;
+  padding: 9px;
+}
