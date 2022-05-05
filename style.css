@@ -1,6 +1,61 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+}
+
+main form {
+  margin-top: 20px;
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+main img {
+  height: 500px;
+}
+
+.container-name {
+  display: flex;
+  margin: 20px 10px;
+}
+
+.container-email-house {
+  display: flex;
+  margin: 0 10px;
+}
+
+.container-familia {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 70px;
+}
+
+.container-radio {
+  display: flex;
+  margin-top: 5px;
+}
+
+.container-familia-conteudo {
+  display: flex;
+}
+
+.container-conteudo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.container-conteudo-linha {
+  display: flex;
+  margin-top: 5px;
 }
 
 .header {
@@ -29,4 +84,3 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
