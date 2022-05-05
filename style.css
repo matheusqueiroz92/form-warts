@@ -84,3 +84,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+.textarea p {
+  display: inline-block;
+}
