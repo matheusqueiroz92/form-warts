@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>TrybeWarts</title>
 </head>
 <body>
-    
+
+    <main>
+        <form id="evaluation-form" action="" method="GET">
+            <div class="container-name">
+                <input type="text" placeholder="Nome" required name="name" id="input-name">
+                <input type="text" placeholder="Sobrenome" required name="lastname" id="input-lastname">
+            </div>
+            <div class="container-email-house">
+                <input type="email" placeholder="Email" required name="" id="input-email">
+                <label for="">Casa:</label>
+                <select id="house">
+                    <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
+                    <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                    <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
+                    <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
+                </select>
+            </div>
+            <div class="container-familia-conteudo">
+                <div class="container-familia">
+                    <label for="family" id="label-family">Qual sua família?</label>
+                    <div class="container-radio">
+                        <input type="radio" name="family" value="Frontend" id="input-frontend">Frontend
+                    </div>
+                    <div class="container-radio">
+                        <input type="radio" name="family" value="Backend" id="input-backend">Backend
+                    </div>
+                    <div class="container-radio">
+                        <input type="radio" name="family" value="FullStack" id="input-fullstack">FullStack
+                    </div>
+                </div>
+                <div class="container-conteudo">
+                    <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <div class="container-conteudo-linha">
+                        <input type="checkbox" name="content" id="input-hofs" value="HoFs">HoFs
+                        <input type="checkbox" name="content" id="input-jest" value="Jest">Jest
+                        <input type="checkbox" name="content" id="input-promises" value="Promises">Promises
+                    </div>
+                    <div class="container-conteudo-linha">
+                        <input type="checkbox" name="content" id="input-react" value="React">React
+                        <input type="checkbox" name="content" id="input-sql" value="SQL">SQL
+                        <input type="checkbox" name="content" id="input-python" value="Python">Python
+                    </div>
+                </div>
+            </div>
+        </form>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
