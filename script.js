@@ -12,3 +12,13 @@ function loginAlert() {
 }
 
 loginButton.addEventListener('click', loginAlert);
+
+const checkbox = document.getElementById('agreement');
+
+function enableButton() {
+  if (checkbox.value === 'on') {
+    document.getElementById('submit-btn').disabled = false;
+  }
+}
+
+checkbox.addEventListener('click', enableButton);
