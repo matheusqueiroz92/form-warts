@@ -14,3 +14,7 @@
   height: 80px;
   padding: 9px;
 }
+
+.trybewarts-login {
+  display: flex;
+}
