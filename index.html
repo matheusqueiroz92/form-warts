@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<<<<<<< HEAD
     <header class="header">
         <div id="logo"><img src="images/trybewarts-header-logo.svg" alt="trybewarts-header-logo" class="trybewarts-header-logo"></div>
             <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -18,6 +19,21 @@
             <button id="login">Entrar</button>
         </form>
     </header>
+=======
+
+<header class="header">
+    <div id="logo"><img src="images/trybewarts-header-logo.svg" alt="trybewarts-header-logo" class="trybewarts-header-logo"></div>
+    
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+    <form action="" class="trybewarts-login">
+        <input type="email" name="email" placeholder="Email" id="email">
+        <input type="password" name="password" placeholder="Senha" id="password">
+        <button id="login">Entrar</button>
+    </form>
+</header>
+
+>>>>>>> 81cf3d8f859d86b358a160b0cf661ef30bff3b24
     <main>
         <form id="evaluation-form" action="" method="GET">
             <div class="container-name">
@@ -61,9 +77,39 @@
                     </div>
                 </div>
             </div>
+            <div id="label-rate">Como você avalia a Trybewarts?
+                <br>
+                <label for="rate">
+                <input type="radio" name="rate" id="1">1
+                <input type="radio" name="rate" id="2">2
+                <input type="radio" name="rate" id="3">3
+                <input type="radio" name="rate" id="4">4
+                <input type="radio" name="rate" id="5">5
+                <input type="radio" name="rate" id="6">6
+                <input type="radio" name="rate" id="7">7
+                <input type="radio" name="rate" id="8">8
+                <input type="radio" name="rate" id="9">9
+                <input type="radio" name="rate" id="10">10
+            </label>
+            </div>
+            <label for="" class="textarea">Deixe seu comentário:
+                <br><textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+                <br><p id="counter">500</p><p>&#160Caracteres restantes</p>
+                
+            </label>
+            <label for="" id="label-infos">Você concorda com o uso das informações acima?
+                <input type="checkbox" name="" id="agreement">
+            </label>
+            <button type="submit" id="submit-btn" disabled>Enviar</button>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </main>
+<<<<<<< HEAD
     <script src="script.js"></script>
+=======
+    <footer>Direitos reservados à Trybewarts©</footer>
+    
+<script src="script.js"></script>
+>>>>>>> 81cf3d8f859d86b358a160b0cf661ef30bff3b24
 </body>
 </html>
