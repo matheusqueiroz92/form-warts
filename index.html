@@ -19,96 +19,52 @@
             <button class='btn-dark'id="login">Entrar</button>
         </form>
     </header>
-<<<<<<< HEAD
     <main>
-        <form id="evaluation-form" action="" method="GET">
-            <div class="container-name">
-                <input type="text" placeholder="Nome" required name="name" id="input-name">
-                <input type="text" placeholder="Sobrenome" required name="lastname" id="input-lastname">
-            </div>
-            <div class="container-email-house">
-                <input type="email" placeholder="Email" required name="" id="input-email">
-                <label for="">Casa:</label>
-                <select id="house">
-                    <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
-                    <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                    <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
-                    <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
-                </select>
-            </div>
-            <div class="container-familia-conteudo">
-                <div class="container-familia">
-                    <label for="family" id="label-family">Qual sua família?</label>
-                    <div class="container-radio">
-                        <input type="radio" name="family" class="radio" value="Frontend" id="input-frontend">Frontend
+        <main>
+            <div class="container">
+            <form id="evaluation-form" action="" method="get">
+                <div class="container-form">
+                    <div class="container-name">
+                        <input type="text" class="form-control" placeholder="Nome" required name="name" id="input-name">
+                        <input type="text" class="form-control" placeholder="Sobrenome" required name="lastname" id="input-lastname">
                     </div>
-                    <div class="container-radio">
-                        <input type="radio" name="family" class="radio" value="Backend" id="input-backend">Backend
-                    </div>
-                    <div class="container-radio">
-                        <input type="radio" name="family" class="radio" value="FullStack" id="input-fullstack">FullStack
-                    </div>
-                </div>
-                <div class="container-conteudo">
-                    <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-                    <div class="container-conteudo-linha">
-                        <input type="checkbox" name="content" class="subject" id="input-hofs" value="HoFs">HoFs
-                        <input type="checkbox" name="content" class="subject" id="input-jest" value="Jest">Jest
-                        <input type="checkbox" name="content" class="subject" id="input-promises" value="Promises">Promises
-                    </div>
-                    <div class="container-conteudo-linha">
-                        <input type="checkbox" name="content" class="subject" id="input-react" value="React">React
-                        <input type="checkbox" name="content" class="subject" id="input-sql" value="SQL">SQL
-                        <input type="checkbox" name="content" class="subject" id="input-python" value="Python">Python
-=======
-
-    <main>
-        <div class="container">
-        <form id="evaluation-form" action="" method="get">
-            <div class="container-form">
-                <div class="container-name">
-                    <input type="text" class="form-control" placeholder="Nome" required name="name" id="input-name">
-                    <input type="text" class="form-control" placeholder="Sobrenome" required name="lastname" id="input-lastname">
-                </div>
-                <div class="container-email-house">
-                    <input type="email" class="form-control" placeholder="Email" required name="" id="input-email">
-                    <div class="containe-house">
-                        <label for="">Casa:</label>
-                        <select id="house" class="form-select form-select-sm">
-                            <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
-                            <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                            <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
-                            <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="container-familia-conteudo">
-                    <div class="container-familia">
-                        <label for="family" id="label-family">Qual sua família?</label>
-                        <div class="container-radio">
-                            <input type="radio" name="family" class="radio form-check-input mt-0" value="Frontend" id="input-frontend">Frontend
-                        </div>
-                        <div class="container-radio">
-                            <input type="radio" name="family" class="radio form-check-input mt-0" value="Backend" id="input-backend">Backend
-                        </div>
-                        <div class="container-radio">
-                            <input type="radio" name="family" class="radio form-check-input mt-0" value="FullStack" id="input-fullstack">FullStack
+                    <div class="container-email-house">
+                        <input type="email" class="form-control" placeholder="Email" required name="" id="input-email">
+                        <div class="containe-house">
+                            <label for="">Casa:</label>
+                            <select id="house" class="form-select form-select-sm">
+                                <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
+                                <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                                <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
+                                <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="container-conteudo">
-                        <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-                        <!-- removi o <br> que estava dando erro no cypress -->
-                        <div class="container-conteudo-linha">
-                            <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-hofs" value="HoFs">HoFs
-                            <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-jest" value="Jest">Jest
-                            <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-promises" value="Promises">Promises
+                    <div class="container-familia-conteudo">
+                        <div class="container-familia">
+                            <label for="family" id="label-family">Qual sua família?</label>
+                            <div class="container-radio">
+                                <input type="radio" name="family" class="radio form-check-input mt-0" value="Frontend" id="input-frontend">Frontend
+                            </div>
+                            <div class="container-radio">
+                                <input type="radio" name="family" class="radio form-check-input mt-0" value="Backend" id="input-backend">Backend
+                            </div>
+                            <div class="container-radio">
+                                <input type="radio" name="family" class="radio form-check-input mt-0" value="FullStack" id="input-fullstack">FullStack
+                            </div>
                         </div>
-                        <div class="container-conteudo-linha">
-                            <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-react" value="React">React
-                            <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-sql" value="SQL">SQL
-                            <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-python" value="Python">Python
-                        </div>
->>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
+                        <div class="container-conteudo">
+                            <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                            <div class="container-conteudo-linha">
+                                <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-hofs" value="HoFs">HoFs
+                                <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-jest" value="Jest">Jest
+                                <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-promises" value="Promises">Promises
+                            </div>
+                            <div class="container-conteudo-linha">
+                                <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-react" value="React">React
+                                <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-sql" value="SQL">SQL
+                                <input type="checkbox" class="subject form-check-input mt-0" name="content" id="input-python" value="Python">Python
+                            </div>
                     </div>
                 </div>
                 <div id="label-rate">Como você avalia a Trybewarts?
@@ -131,38 +87,16 @@
                     <br><p id="counter">500</p><p>&#160Caracteres restantes</p>
                 </label>
                 <br>
-<<<<<<< HEAD
-                <label for="rate">
-                <input type="radio" name="rate" class="avaliacao" value="1" id="1">1
-                <input type="radio" name="rate" class="avaliacao" value="2" id="2">2
-                <input type="radio" name="rate" class="avaliacao" value="3" id="3">3
-                <input type="radio" name="rate" class="avaliacao" value="4" id="4">4
-                <input type="radio" name="rate" class="avaliacao" value="5" id="5">5
-                <input type="radio" name="rate" class="avaliacao" value="6" id="6">6
-                <input type="radio" name="rate" class="avaliacao" value="7" id="7">7
-                <input type="radio" name="rate" class="avaliacao" value="8" id="8">8
-                <input type="radio" name="rate" class="avaliacao" value="9" id="9">9
-                <input type="radio" name="rate" class="avaliacao" value="10" id="10">10
-            </label>
-=======
                 <label for="" id="label-infos">Você concorda com o uso das informações acima?
                     <input type="checkbox" name="" id="agreement">
                 </label>
                 <button type="submit" id="submit-btn" class="btn btn-success" disabled>Enviar</button>
->>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
             </div>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </main>
-<<<<<<< HEAD
-    <script src="script.js"></script>
-</body>
-</html>
-=======
 </div>
-    <footer>Direitos reservados à Trybewarts©</footer>
-
+<footer>Direitos reservados à Trybewarts©</footer>
 <script src="script.js"></script>
- </body>
+</body>
 </html> 
->>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
