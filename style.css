@@ -120,13 +120,13 @@ hr {
 
 footer {
   display: flex;
-  margin-top: 55px;
-  padding: 30px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(43, 12, 71);
   width: 100%;
-  height: 60px;
-  background: rgb(55, 76, 143);
-  align-items: center;
   justify-content: center;
+  padding: 6px;
+  color: white;
 }
 
 .textarea p {
