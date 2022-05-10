@@ -1,13 +1,13 @@
 const loginButton = document.getElementById('login');
 const buttonEnviar = document.getElementById('submit-btn');
-let formCadastrado = document.getElementById('evaluation-form');
-let inputName = document.getElementById('input-name');
-let inputLastname = document.getElementById('input-lastname');
-let inputEmail = document.getElementById('input-email');
-let house = document.querySelector('#house');
-let inputFamily = document.querySelectorAll('.radio');
-let conteudo = document.querySelectorAll('.subject');
-let avalia = document.querySelectorAll('.avaliacao');
+const formCadastrado = document.getElementById('evaluation-form');
+const inputName = document.getElementById('input-name');
+const inputLastname = document.getElementById('input-lastname');
+const inputEmail = document.getElementById('input-email');
+const house = document.querySelector('#house');
+const inputFamily = document.querySelectorAll('.radio');
+const conteudo = document.querySelectorAll('.subject');
+const avalia = document.querySelectorAll('.avaliacao');
 
 function loginAlert() {
   const email = document.getElementById('email').value;
@@ -42,39 +42,59 @@ textarea.addEventListener('input', countLenght);
 
 console.log(conteudo);
 
-function alteraForm () {
-  let valueHouse = house.options[house.selectedIndex].value; //pega o valor da House
-
-  function getInputRadio(name) { //pega o valor do input radio family
-    for(let i = 0; i < inputFamily.length; i += 1){
-      if(inputFamily[i].checked) {
-        return inputFamily[i].value;
-      }
+function getInputRadio() { // pega o valor do input radio family
+  for (let i = 0; i < inputFamily.length; i += 1) {
+    if (inputFamily[i].checked) {
+      return inputFamily[i].value;
     }
   }
-
-  function getInputContent(name) { //pega o valor do input content
-    let materias = '';
-    for (let i2 = 0; i2 < conteudo.length; i2 += 1) {
-      if (conteudo[i2].checked == true) {
-        materias += conteudo[i2].value + ', ';
-      }
+}
+function getInputContent() { // pega o valor do input content
+  let materias = '';
+  for (let i2 = 0; i2 < conteudo.length; i2 += 1) {
+    if (conteudo[i2].checked === true) {
+      materias += `${conteudo[i2].value}, `;
     }
+<<<<<<< HEAD
     return materias.slice(0, -2);
+=======
+>>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
   }
-
-  function getInputAvalia(name) { //pega o valor do input avaliação
-    for(let i3 = 0; i3 < avalia.length; i3 += 1) {
-      if(avalia[i3].checked) {
-        return avalia[i3].value;
-      }
+  return materias;
+}
+function getInputAvalia() { // pega o valor do input avaliação
+  for (let i3 = 0; i3 < avalia.length; i3 += 1) {
+    if (avalia[i3].checked) {
+      return avalia[i3].value;
     }
   }
+<<<<<<< HEAD
   formCadastrado.innerHTML = ''; //limpa o formulário de cadastro
   let textForm = document.createElement('p');
   textForm.innerText = 'Nome: ' + inputName.value + ' ' + inputLastname.value + '\n' + 'Email: ' + inputEmail.value + '\n' + 'Família: ' + getInputRadio('family') + '\n' + 'Casa: ' + valueHouse + '\n' + 'Matérias: ' + getInputContent('content') + '\n' + 'Avaliação: ' + getInputAvalia('rate') + '\n' + 'Observações: ' + textarea.value;
-  formCadastrado.appendChild(textForm);
-  console.log(getInputContent('content'));
+=======
 }
+function montaForm() {
+  const valueHouse = house.options[house.selectedIndex].value; // pega o valor da House
+  formCadastrado.innerHTML = '';
+  const textForm = document.createElement('p');
+  textForm.innerText = `Nome: ${inputName.value} ${inputLastname.value}
+  Email: ${inputEmail.value}
+  Família: ${getInputRadio()}
+  Casa: ${valueHouse}
+  Matérias: ${getInputContent()}
+  Avaliação: ${getInputAvalia()}
+  Observações: ${textarea.value}`;
+>>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
+  formCadastrado.appendChild(textForm);
+}
+
+function alteraForm() {
+  getInputRadio();
+  getInputContent();
+  getInputAvalia();
+  montaForm();
+}
+// reduzi o tamanho da função pelo limite do lint
 
 buttonEnviar.addEventListener('click', alteraForm);

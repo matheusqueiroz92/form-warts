@@ -1,4 +1,5 @@
 * {
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,70 +23,169 @@ display: flex;
 
 main {
 display: flex;
-}
-
-main form {
-margin-top: 20px;
-display: flex;
-width: 675px;
-flex-direction: column;
-margin-bottom: 20px;
-}
-
-main img {
-height: 500px;
-}
-
-.container-name {
-display: flex;
-margin: 20px 10px;
-}
-
-.container-email-house {
-display: flex;
-margin: 0 10px;
-}
-
-.container-familia {
-display: flex;
-flex-direction: column;
-margin-top: 10px;
-margin-left: 10px;
-margin-right: 70px;
-}
-
-.container-radio {
-display: flex;
-margin-top: 5px;
-}
-
-.container-familia-conteudo {
-display: flex;
-}
-
-.container-conteudo {
-display: flex;
-flex-direction: column;
-margin-top: 10px;
-}
-
-.container-conteudo-linha {
-display: flex;
-margin-top: 5px;
+=======
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-display: flex;
-background-color: rgb(50, 167, 145);
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  align-items: center;
+  justify-content: space-between;
+>>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
+}
+
+.container {
+  display: flex;
+}
+
+main img {
+  width: 500px;
+  height: 500px;
+  padding-right: 100px;
 }
 
 #logo img {
-height: 80px;
-padding: 9px;
+  height: 80px;
+  padding: 9px;
 }
 
 .trybewarts-login {
+  display: flex;
+}
+
+<<<<<<< HEAD
+.container-conteudo-linha {
+display: flex;
+margin-top: 5px;
+=======
+main {
+  display: flex;
+}
+
+main form {
+  margin-top: 20px;
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.container-name {
+  display: flex;
+  margin: 20px 10px;
+}
+
+.container-email-house {
+  display: flex;
+  margin: 0 10px;
+  align-items: flex-end;
+  justify-items: center;
+}
+
+.container-familia {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 70px;
+}
+
+.container-radio {
+  display: flex;
+  margin-top: 5px;
+}
+
+.container-familia-conteudo {
+  display: flex;
+}
+
+.container-conteudo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.container-conteudo-linha {
+  display: flex;
+  margin-top: 5px;
+>>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
+}
+
+.trybewarts-login input , .trybewarts-login button {
+  display: flex;
+  margin-right: 5px;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+<<<<<<< HEAD
+.trybewarts-login {
 display: flex;
 }
+=======
+hr {
+  width: 410px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.container-conteudo #label-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 120px;
+  padding-bottom: 10px;
+}
+
+/* .container-conteudo .conteudo-linha {
+  display: flex;
+  flex-direction: column;
+  padding-left: 120px;
+  padding-bottom: 10px;
+} */
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(43, 12, 71);
+  width: 100%;
+  justify-content: center;
+  padding: 6px;
+  color: white;
+}
+
+.textarea p {
+  display: inline-block;
+  margin: 0;
+}
+
+#input-name , #input-lastname , #input-email {
+  height: 25px;
+}
+
+.container-email-house #input-email {
+  padding: 14.4px 0;
+}
+
+.container-name input {
+  padding: 14.4px 0;
+}
+
+.container-form {
+
+  /* width 675 pelo requisito do cypress --> */
+  width: 675px;
+}
+>>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
