@@ -20,24 +20,36 @@
         </form>
     </header>
     <main>
-        <main>
-            <div class="container">
-            <form id="evaluation-form" action="" method="get">
-                <div class="container-form">
-                    <div class="container-name">
-                        <input type="text" class="form-control" placeholder="Nome" required name="name" id="input-name">
-                        <input type="text" class="form-control" placeholder="Sobrenome" required name="lastname" id="input-lastname">
+        <div class="container">
+        <form id="evaluation-form" action="" method="get">
+            <div class="container-form">
+                <div class="container-name">
+                    <input type="text" class="form-control" placeholder="Nome" required name="name" id="input-name">
+                    <input type="text" class="form-control" placeholder="Sobrenome" required name="lastname" id="input-lastname">
+                </div>
+                <div class="container-email-house">
+                    <input type="email" class="form-control" placeholder="Email" required name="" id="input-email">
+                    <div class="containe-house">
+                        <label for="">Casa:</label>
+                        <select id="house" class="form-select form-select-sm">
+                            <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
+                            <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                            <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
+                            <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
+                        </select>
                     </div>
-                    <div class="container-email-house">
-                        <input type="email" class="form-control" placeholder="Email" required name="" id="input-email">
-                        <div class="containe-house">
-                            <label for="">Casa:</label>
-                            <select id="house" class="form-select form-select-sm">
-                                <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
-                                <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                                <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
-                                <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
-                            </select>
+                </div>
+                <div class="container-familia-conteudo">
+                    <div class="container-familia">
+                        <label for="family" id="label-family">Qual sua família?</label>
+                        <div class="container-radio">
+                            <input type="radio" name="family" class="radio form-check-input mt-0" value="Frontend" id="input-frontend">Frontend
+                        </div>
+                        <div class="container-radio">
+                            <input type="radio" name="family" class="radio form-check-input mt-0" value="Backend" id="input-backend">Backend
+                        </div>
+                        <div class="container-radio">
+                            <input type="radio" name="family" class="radio form-check-input mt-0" value="FullStack" id="input-fullstack">FullStack
                         </div>
                     </div>
                     <div class="container-familia-conteudo">

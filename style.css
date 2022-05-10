@@ -111,12 +111,12 @@ hr {
   padding-bottom: 10px;
 }
 
-.container-conteudo .conteudo-linha {
+/* .container-conteudo .conteudo-linha {
   display: flex;
   flex-direction: column;
   padding-left: 120px;
   padding-bottom: 10px;
-}
+} */
 
 footer {
   display: flex;

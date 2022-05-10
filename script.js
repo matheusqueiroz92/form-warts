@@ -40,8 +40,6 @@ function countLenght() {
 
 textarea.addEventListener('input', countLenght);
 
-console.log(conteudo);
-
 function getInputRadio() { // pega o valor do input radio family
   for (let i = 0; i < inputFamily.length; i += 1) {
     if (inputFamily[i].checked) {
@@ -55,9 +53,10 @@ function getInputContent() { // pega o valor do input content
     if (conteudo[i2].checked === true) {
       materias += `${conteudo[i2].value}, `;
     }
-    return materias.slice(0, -2);
   }
+  return materias.slice(0, -2);
 }
+
 function getInputAvalia() { // pega o valor do input avaliação
   for (let i3 = 0; i3 < avalia.length; i3 += 1) {
     if (avalia[i3].checked) {
@@ -65,6 +64,7 @@ function getInputAvalia() { // pega o valor do input avaliação
     }
   }
 }
+
 function montaForm() {
   const valueHouse = house.options[house.selectedIndex].value; // pega o valor da House
   formCadastrado.innerHTML = '';
