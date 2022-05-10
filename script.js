@@ -34,16 +34,11 @@ checkbox.addEventListener('click', enableButton);
 
 const textarea = document.querySelector('#textarea');
 const counter = document.getElementById('counter');
-<<<<<<< HEAD
-
-=======
->>>>>>> 81cf3d8f859d86b358a160b0cf661ef30bff3b24
 function countLenght() {
   counter.innerText = 500 - textarea.value.length;
 }
 
 textarea.addEventListener('input', countLenght);
-<<<<<<< HEAD
 
 console.log(conteudo);
 
@@ -65,7 +60,7 @@ function alteraForm () {
         materias += conteudo[i2].value + ', ';
       }
     }
-    return materias;
+    return materias.slice(0, -2);
   }
 
   function getInputAvalia(name) { //pega o valor do input avaliação
@@ -75,7 +70,7 @@ function alteraForm () {
       }
     }
   }
-  formCadastrado.innerHTML = '';
+  formCadastrado.innerHTML = ''; //limpa o formulário de cadastro
   let textForm = document.createElement('p');
   textForm.innerText = 'Nome: ' + inputName.value + ' ' + inputLastname.value + '\n' + 'Email: ' + inputEmail.value + '\n' + 'Família: ' + getInputRadio('family') + '\n' + 'Casa: ' + valueHouse + '\n' + 'Matérias: ' + getInputContent('content') + '\n' + 'Avaliação: ' + getInputAvalia('rate') + '\n' + 'Observações: ' + textarea.value;
   formCadastrado.appendChild(textForm);
@@ -83,5 +78,3 @@ function alteraForm () {
 }
 
 buttonEnviar.addEventListener('click', alteraForm);
-=======
->>>>>>> 81cf3d8f859d86b358a160b0cf661ef30bff3b24
