@@ -1,29 +1,4 @@
 * {
-<<<<<<< HEAD
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.header {
-display: flex;
-background-color: rgb(50, 167, 145);
-align-items: center;
-justify-content: space-between;
-}
-
-#logo img {
-height: 80px;
-padding: 9px;
-}
-
-.trybewarts-login {
-display: flex;
-}
-
-main {
-display: flex;
-=======
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,11 +9,6 @@ display: flex;
   background-color: rgb(50, 167, 145);
   align-items: center;
   justify-content: space-between;
->>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
-}
-
-.container {
-  display: flex;
 }
 
 main img {
@@ -56,13 +26,20 @@ main img {
   display: flex;
 }
 
-<<<<<<< HEAD
-.container-conteudo-linha {
-display: flex;
-margin-top: 5px;
-=======
 main {
   display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.container-conteudo-linha {
+  display: flex;
+  margin-top: 5px;
 }
 
 main form {
@@ -106,12 +83,7 @@ main form {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-}
-
-.container-conteudo-linha {
-  display: flex;
-  margin-top: 5px;
->>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
+  align-items: center;
 }
 
 .trybewarts-login input , .trybewarts-login button {
@@ -130,11 +102,6 @@ h2 {
   padding-bottom: 10px;
 }
 
-<<<<<<< HEAD
-.trybewarts-login {
-display: flex;
-}
-=======
 hr {
   width: 410px;
   margin-left: 20px;
@@ -188,4 +155,3 @@ footer {
   /* width 675 pelo requisito do cypress --> */
   width: 675px;
 }
->>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771

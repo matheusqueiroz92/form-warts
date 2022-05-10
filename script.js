@@ -55,25 +55,18 @@ function getInputContent() { // pega o valor do input content
     if (conteudo[i2].checked === true) {
       materias += `${conteudo[i2].value}, `;
     }
-<<<<<<< HEAD
-    return materias.slice(0, -2);
-=======
->>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
   }
-  return materias;
+  return materias.slice(0, -2);
 }
+
 function getInputAvalia() { // pega o valor do input avaliação
   for (let i3 = 0; i3 < avalia.length; i3 += 1) {
     if (avalia[i3].checked) {
       return avalia[i3].value;
     }
   }
-<<<<<<< HEAD
-  formCadastrado.innerHTML = ''; //limpa o formulário de cadastro
-  let textForm = document.createElement('p');
-  textForm.innerText = 'Nome: ' + inputName.value + ' ' + inputLastname.value + '\n' + 'Email: ' + inputEmail.value + '\n' + 'Família: ' + getInputRadio('family') + '\n' + 'Casa: ' + valueHouse + '\n' + 'Matérias: ' + getInputContent('content') + '\n' + 'Avaliação: ' + getInputAvalia('rate') + '\n' + 'Observações: ' + textarea.value;
-=======
 }
+
 function montaForm() {
   const valueHouse = house.options[house.selectedIndex].value; // pega o valor da House
   formCadastrado.innerHTML = '';
@@ -85,7 +78,6 @@ function montaForm() {
   Matérias: ${getInputContent()}
   Avaliação: ${getInputAvalia()}
   Observações: ${textarea.value}`;
->>>>>>> f4153d5c6043f074cb9b75e36f57401b82e85771
   formCadastrado.appendChild(textForm);
 }
 
