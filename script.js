@@ -34,7 +34,6 @@ checkbox.addEventListener('click', enableButton);
 
 const textarea = document.querySelector('#textarea');
 const counter = document.getElementById('counter');
-
 function countLenght() {
   counter.innerText = 500 - textarea.value.length;
 }
